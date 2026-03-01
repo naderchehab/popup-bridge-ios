@@ -29,6 +29,7 @@
 		8079D71A2996F6C200A2E336 /* PopupBridgeUserScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079D7192996F6C200A2E336 /* PopupBridgeUserScript.swift */; };
 		A775A0931DEE4F14009E67C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		A775A0941DEE4F18009E67C2 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E9D6D21DCA6B540035FA41 /* SafariServices.framework */; };
+		AA00000000000000000001 /* PopupBridge_AppSwitch_UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000002 /* PopupBridge_AppSwitch_UnitTests.swift */; };
 		BE2524522A17DF8200168D77 /* PopupBridge_UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2524512A17DF8200168D77 /* PopupBridge_UnitTests.swift */; };
 		BE2524542A17DFCC00168D77 /* MockUserContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2524532A17DFCC00168D77 /* MockUserContentController.swift */; };
 		BE2524562A17FB9F00168D77 /* MockScriptMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2524552A17FB9F00168D77 /* MockScriptMessage.swift */; };
@@ -72,6 +73,7 @@
 		A79330F01DF0F98F00EE479D /* PopupBridge-Framework-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PopupBridge-Framework-Info.plist"; sourceTree = "<group>"; };
 		A7E9D6D01DCA6B4F0035FA41 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A7E9D6D21DCA6B540035FA41 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		AA00000000000000000002 /* PopupBridge_AppSwitch_UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupBridge_AppSwitch_UnitTests.swift; sourceTree = "<group>"; };
 		BE2524512A17DF8200168D77 /* PopupBridge_UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupBridge_UnitTests.swift; sourceTree = "<group>"; };
 		BE2524532A17DFCC00168D77 /* MockUserContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserContentController.swift; sourceTree = "<group>"; };
 		BE2524552A17FB9F00168D77 /* MockScriptMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockScriptMessage.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				45FBAF2E2D701E1D000D550B /* MockSessionable.swift */,
 				BE2524532A17DFCC00168D77 /* MockUserContentController.swift */,
 				BEF9ED202A2A4896005D54AB /* MockWebAuthenticationSession.swift */,
+				AA00000000000000000002 /* PopupBridge_AppSwitch_UnitTests.swift */,
 				BE2524512A17DF8200168D77 /* PopupBridge_UnitTests.swift */,
 				4513482A2D8DDA17009265C9 /* XCTestCase+trackForMemoryLeaks.swift */,
 			);
@@ -358,6 +361,7 @@
 				45AE41D22D7649F800388548 /* MockAnalyticsService.swift in Sources */,
 				BE2524562A17FB9F00168D77 /* MockScriptMessage.swift in Sources */,
 				BEF9ED212A2A4896005D54AB /* MockWebAuthenticationSession.swift in Sources */,
+				AA00000000000000000001 /* PopupBridge_AppSwitch_UnitTests.swift in Sources */,
 				BE2524522A17DF8200168D77 /* PopupBridge_UnitTests.swift in Sources */,
 				45FBAF352D70CFB6000D550B /* AnalyticsService_Test.swift in Sources */,
 			);

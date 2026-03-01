@@ -1,12 +1,13 @@
 import Foundation
 
 struct PopupBridgeUserScript {
-    
+
     let scheme: String
     let scriptMessageHandlerName: String
     let host: String
     let isVenmoInstalled: Bool
-    
+    let isPayPalInstalled: Bool
+
     var rawJavascript: String {
         """
         ;(function () {
@@ -15,16 +16,26 @@ struct PopupBridgeUserScript {
             window.popupBridge.getReturnUrlPrefix = function getReturnUrlPrefix() {
                 return '\(scheme)://\(host)/';
             };
-            
+
             window.popupBridge.isVenmoInstalled = \(isVenmoInstalled);
-            
+
+            window.popupBridge.isPayPalInstalled = \(isPayPalInstalled);
+
             window.popupBridge.open = function open(url) {
                 window.webkit.messageHandlers.\(scriptMessageHandlerName)
                     .postMessage({
                     url: url
                 });
             };
-        
+
+            window.popupBridge.launchApp = function launchApp(url) {
+                window.webkit.messageHandlers.\(scriptMessageHandlerName)
+                    .postMessage({
+                    url: url,
+                    action: "launchApp"
+                });
+            };
+
             window.popupBridge.sendMessage = function sendMessage(message, data) {
                 window.webkit.messageHandlers.\(scriptMessageHandlerName)
                     .postMessage({
@@ -34,7 +45,7 @@ struct PopupBridgeUserScript {
                     }
                 });
             };
-        
+
             return 0;
         })();
         """
